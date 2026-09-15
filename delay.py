@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import pickle
 # Load the trained model
-filename = r'logistic_model.sav'
+filename = r'delivery_delay.pkl'
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Define the correct column names
