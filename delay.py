@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import pickle
 # Load the trained model
 filename = r'logistic_model.sav'
-loaded_model = joblib.load(open(filename, 'rb'))
+loaded_model = pickle.load(open(filename, 'rb'))
 
 # Define the correct column names
 columns = ['Delivery_Distance', 'Traffic_Congestion', 'Weather_Condition',
